@@ -1,0 +1,19 @@
+{
+  "clientes": [
+    {
+      "name": "David Wanderley",
+      "email": "davidgomeswanderley@gmail.com",
+      "id": 1
+  },
+  {
+      "name": "Carlos Fereira",
+      "email": "carlosfw.adv@gmail.com",
+      "id": 2
+  },
+  {
+      "name": "Vanessa Morreira",
+      "email": "advogadavanessagomees@hotmail.com",
+      "id": 3
+  }
+  ]
+}
