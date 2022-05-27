@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Alterar Processo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Numero do processo" [(ngModel)]="processo.nProcesso" name="nProcesso">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Vara" [(ngModel)]="processo.vara" name="vara">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateProcesso()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

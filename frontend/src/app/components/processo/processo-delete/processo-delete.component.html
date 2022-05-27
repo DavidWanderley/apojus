@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Excluir Processo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Numero do processo" [value]="processo.nProcesso" name="nProcesso" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Vara" [value]="processo.vara" name="vara" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteCliente()" color="warn">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

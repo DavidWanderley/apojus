@@ -1,0 +1,23 @@
+.home .title{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.home .subtitle{
+    font-size: 1.1rem;
+}
+
+button{
+    margin: 20px 15px 0px 0px;
+    background-color: gray;
+    color: white;
+    display: flex;
+}
+
+img {
+    margin: 20px 15px 0px 950px;
+    display: flex;
+    width: 320px;
+    height: 205px;
+}

@@ -1,0 +1,18 @@
+<mat-card>
+    <mat-card-title>Adcionar Processo</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Numero do Processo" [(ngModel)]="processo.nProcesso" name="nProcesso">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Vara" [(ngModel)]="processo.vara" name="vara">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createProcesso()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
