@@ -1,2 +1,2 @@
 # apojus
-aprendendo angular com o curso da udemy
+Projeto feito em angular
