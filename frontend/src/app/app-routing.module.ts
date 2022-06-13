@@ -1,3 +1,5 @@
+import { AdvogadosUpdateComponent } from './components/advogados/advogados-update/advogados-update.component';
+import { AdvogadosDeleteComponent } from './components/advogados/advogados-delete/advogados-delete.component';
 import { ProcessoCrudComponent } from './views/processo-crud/processo-crud.component';
 import { ProcessoDeleteComponent } from './components/processo/processo-delete/processo-delete.component';
 import { ProcessoUpdateComponent } from './components/processo/processo-update/processo-update.component';
@@ -10,6 +12,8 @@ import { ClienteCrudComponent } from "./views/cliente-crud/cliente-crud.componen
 import { ClienteCreateComponent } from './components/cliente/cliente-create/cliente-create.component';
 import { ClienteDeleteComponent } from './components/cliente/cliente-delete/cliente-delete.component';
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
+import { AdvogadosCrudComponent } from './views/advogados-crud/advogados-crud.component';
+import { AdvogadosCreateComponent } from './components/advogados/advogados-create/advogados-create.component';
 
 
 const routes: Routes = [
@@ -48,6 +52,22 @@ const routes: Routes = [
   {
     path: "processos/delete/:id",
     component: ProcessoDeleteComponent
+  },
+  {
+    path: "advogado",
+    component: AdvogadosCrudComponent
+  },
+  {
+    path: "advogado/create",
+    component: AdvogadosCreateComponent
+  },
+  {
+    path: "advogado/delete/:id",
+    component: AdvogadosDeleteComponent
+  },
+  {
+    path: "advogado/update/:id",
+    component: AdvogadosUpdateComponent
   }
 ];
 

@@ -1,0 +1,19 @@
+<mat-card>
+    <mat-card-title>Alterar Advogado</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome" [(ngModel)]="advogado.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Oab" [(ngModel)]="advogado.oab" name="oab">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateAdvogado()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

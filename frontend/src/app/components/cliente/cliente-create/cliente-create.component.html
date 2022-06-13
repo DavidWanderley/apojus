@@ -2,13 +2,13 @@
     <mat-card-title>Novo Cliente</mat-card-title>
     <form>
         <mat-form-field>
-            <input matInput placeholder="Nome" [(ngModel)]="cliente.name" name="name">
+            <input matInput placeholder="Nome" [(ngModel)]="cliente.name" name="name" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Email" [(ngModel)]="cliente.email" name="email">
+            <input matInput placeholder="Email" [(ngModel)]="cliente.email" name="email" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Cpf" [(ngModel)]="cliente.cpf" name="cpf">
+            <input matInput placeholder="Cpf" [(ngModel)]="cliente.cpf" name="cpf" required>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Telefone" [(ngModel)]="cliente.telefone" name="telefone">

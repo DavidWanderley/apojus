@@ -36,6 +36,11 @@ import { ProcessoCreateComponent } from './components/processo/processo-create/p
 import { ProcessoReadComponent } from './components/processo/processo-read/processo-read.component';
 import { ProcessoUpdateComponent } from './components/processo/processo-update/processo-update.component';
 import { ProcessoDeleteComponent } from './components/processo/processo-delete/processo-delete.component';
+import { AdvogadosReadComponent } from './components/advogados/advogados-read/advogados-read.component';
+import { AdvogadosUpdateComponent } from './components/advogados/advogados-update/advogados-update.component';
+import { AdvogadosDeleteComponent } from './components/advogados/advogados-delete/advogados-delete.component';
+import { AdvogadosCreateComponent } from './components/advogados/advogados-create/advogados-create.component';
+import { AdvogadosCrudComponent } from './views/advogados-crud/advogados-crud.component';
 
 
 @NgModule({
@@ -55,7 +60,12 @@ import { ProcessoDeleteComponent } from './components/processo/processo-delete/p
     ProcessoCreateComponent,
     ProcessoReadComponent,
     ProcessoUpdateComponent,
-    ProcessoDeleteComponent
+    ProcessoDeleteComponent,
+    AdvogadosReadComponent,
+    AdvogadosUpdateComponent,
+    AdvogadosDeleteComponent,
+    AdvogadosCreateComponent,
+    AdvogadosCrudComponent
   ],
   imports: [
     BrowserModule,
