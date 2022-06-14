@@ -11,10 +11,28 @@
             <input matInput placeholder="Cpf" [(ngModel)]="cliente.cpf" name="cpf" required>
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Telefone" [(ngModel)]="cliente.telefone" name="telefone">
+            <input matInput placeholder="Rg" [(ngModel)]="cliente.rg" name="rg">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone" [(ngModel)]="cliente.telefone" name="telefone" required>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Endereço" [(ngModel)]="cliente.endereco" name="endereco">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Bairro" [(ngModel)]="cliente.bairro" name="bairro">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero" [(ngModel)]="cliente.numero" name="numero">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Referencia" [(ngModel)]="cliente.referencia" name="referencia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Demanda Processual" [(ngModel)]="cliente.demandaProcessual" name="demandaProcessual">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Prioridade" [(ngModel)]="cliente.prioridade" name="prioridade">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="createCliente()" color="primary">

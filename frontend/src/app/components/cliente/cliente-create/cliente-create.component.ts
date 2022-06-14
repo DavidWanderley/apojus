@@ -14,8 +14,14 @@ export class ClienteCreateComponent implements OnInit {
     name: '',
     email: '',
     cpf: '',
-    telefone:'',
-    endereco:''
+    telefone: '',
+    endereco: '',
+    rg: '',
+    bairro: '',
+    numero: '',
+    referencia: '',
+    demandaProcessual: '',
+    prioridade: ''
   }
 
   constructor(private clienteService: ClienteService, private router: Router ) { }

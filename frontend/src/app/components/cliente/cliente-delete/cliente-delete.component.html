@@ -11,10 +11,28 @@
             <input matInput placeholder="Cpf" [value]="cliente.cpf" name="cpf" disabled>
         </mat-form-field>
         <mat-form-field>
+            <input matInput placeholder="Rg" [value]="cliente.rg" name="rg" disabled>
+        </mat-form-field>
+        <mat-form-field>
             <input matInput placeholder="Telefone" [value]="cliente.telefone" name="telefone" disabled>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Endereço" [value]="cliente.endereco" name="endereco" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Bairro" [value]="cliente.bairro" name="bairro" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero" [value]="cliente.numero" name="numero" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Referencia" [value]="cliente.referencia" name="referencia" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Demanda Processual" [value]="cliente.demandaProcessual" name="demandaProcessual" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Prioridade" [value]="cliente.prioridade" name="prioridade" disabled>
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="deleteCliente()" color="warn">

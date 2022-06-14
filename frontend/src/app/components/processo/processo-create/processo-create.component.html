@@ -2,10 +2,25 @@
     <mat-card-title>Adcionar Processo</mat-card-title>
     <form>
         <mat-form-field>
+            <input matInput placeholder="Nome do processo" [(ngModel)]="processo.nomeProcesso" name="nomeProcesso">
+        </mat-form-field>
+        <mat-form-field>
             <input matInput placeholder="Numero do Processo" [(ngModel)]="processo.nProcesso" name="nProcesso">
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Vara" [(ngModel)]="processo.vara" name="vara">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tem liminar" [(ngModel)]="processo.liminar" name="liminar">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Natureza do processo" [(ngModel)]="processo.natureza" name="natureza">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data da Audiencia" [(ngModel)]="processo.dataAudiencia" name="dataAudiencia">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [(ngModel)]="processo.valor" name="valor">
         </mat-form-field>
     </form>
     <button mat-raised-button (click)="createProcesso()" color="primary">

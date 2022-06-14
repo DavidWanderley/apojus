@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class ClienteReadComponent implements OnInit {
 
   clientes: Cliente[] = [];
-  displayedColumns = ['id', 'name', 'email', 'cpf', 'telefone', 'action']
+  displayedColumns = ['id', 'name', 'email', 'telefone', 'prioridade', 'action']
 
   constructor(private clienteService: ClienteService) { }
 

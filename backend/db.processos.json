@@ -3,27 +3,42 @@
     {
       "id": 1,
       "nProcesso": "123456789",
-      "vara": "2 vara do trabalho"
+      "vara": "2 vara do trabalho",
+      "nomeProcesso": "",
+      "liminar": false,
+      "natureza": "",
+      "dataAudiencia": "",
+      "valor": ""
     },
     {
       "id": 2,
       "nProcesso": "321654987",
-      "vara": "1 vara civil"
+      "vara": "1 vara civil",
+      "nomeProcesso": "",
+      "liminar": false,
+      "natureza": "",
+      "dataAudiencia": "",
+      "valor": ""
     },
     {
       "id": 3,
       "nProcesso": "987456321",
-      "vara": "4 vara do trabalho"
+      "vara": "4 vara do trabalho",
+      "nomeProcesso": "",
+      "liminar": "True",
+      "natureza": "",
+      "dataAudiencia": "",
+      "valor": ""
     },
     {
       "nProcesso": "211532132152525",
       "vara": "2 vara do trabalho",
+      "nomeProcesso": "",
+      "liminar": false,
+      "natureza": "",
+      "dataAudiencia": "",
+      "valor": "",
       "id": 4
-    },
-    {
-      "nProcesso": "852389423",
-      "vara": "5 vara civil",
-      "id": 5
     }
   ]
 }

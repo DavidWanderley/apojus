@@ -10,7 +10,7 @@ import { Processo } from './../processo.model';
 export class ProcessoReadComponent implements OnInit {
 
   processos: Processo[] = [];
-  displayedColumns = ['id', 'nProcesso', 'vara', 'action']
+  displayedColumns = ['id', 'nProcesso', 'vara','liminar', 'dataAudiencia', 'action']
 
   constructor(private processoService: ProcessoService) { }
 

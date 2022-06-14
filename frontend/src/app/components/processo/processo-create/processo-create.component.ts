@@ -12,7 +12,12 @@ export class ProcessoCreateComponent implements OnInit {
 
   processo: Processo = {
     nProcesso: '',
-    vara: ''
+    vara: '',
+    nomeProcesso: '',
+    liminar: false,
+    natureza: '',
+    dataAudiencia: '',
+    valor: ''
   }
 
   constructor(private processoService: ProcessoService, private router: Router) { }
