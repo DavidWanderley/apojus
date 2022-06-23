@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { RequestLogin } from './../../components/login/RequestLogin';
+import { LoginService } from './../../components/login/login.service';
 
 @Component({
   selector: 'app-login-crud',
@@ -8,12 +10,22 @@ import { Router } from '@angular/router';
 })
 export class LoginCrudComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  requestLogin!: RequestLogin;
+
+  constructor(private router: Router, private loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.requestLogin = new RequestLogin();
   }
 
   navigateToCreate(): void {
     this.router.navigate(['/login/create'])
   }
+
+  doLogin(): void{
+    this.loginService.doLogin(this.requestLogin).subscribe((data) =>{
+      console.log(data);
+    })
+  }
+  
 }

@@ -3,10 +3,10 @@
     {
       "id": 1,
       "name": "David Wanderley",
-      "email": "davidgomeswanderley@gmail.com",
+      "email": "david@gmail.com",
       "cpf": "052.803.403-08",
       "rg": "",
-      "telefone": "999752177",
+      "telefone": "12345678",
       "endereco": "Av. Norte",
       "bairro": "",
       "numero": "",
@@ -17,7 +17,7 @@
     {
       "id": 2,
       "name": "Carlos Ferreira",
-      "email": "carlosfw.adv@gmail.com",
+      "email": "carlos@gmail.com",
       "cpf": "234.904.703-20",
       "rg": "",
       "telefone": "12345678",
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Vanessa Morreira",
-      "email": "advogadavanessagomees@hotmail.com",
+      "email": "vanessa@hotmail.com",
       "cpf": "419.223.873-04",
       "rg": "",
       "telefone": "12345678",
