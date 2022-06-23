@@ -41,6 +41,11 @@ import { AdvogadosUpdateComponent } from './components/advogados/advogados-updat
 import { AdvogadosDeleteComponent } from './components/advogados/advogados-delete/advogados-delete.component';
 import { AdvogadosCreateComponent } from './components/advogados/advogados-create/advogados-create.component';
 import { AdvogadosCrudComponent } from './views/advogados-crud/advogados-crud.component';
+import { LoginCreateComponent } from './components/login/login-create/login-create.component';
+import { LoginReadComponent } from './components/login/login-read/login-read.component';
+import { LoginDeleteComponent } from './components/login/login-delete/login-delete.component';
+import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
+import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 
 
 @NgModule({
@@ -65,7 +70,12 @@ import { AdvogadosCrudComponent } from './views/advogados-crud/advogados-crud.co
     AdvogadosUpdateComponent,
     AdvogadosDeleteComponent,
     AdvogadosCreateComponent,
-    AdvogadosCrudComponent
+    AdvogadosCrudComponent,
+    LoginCreateComponent,
+    LoginReadComponent,
+    LoginDeleteComponent,
+    LoginUpdateComponent,
+    LoginCrudComponent
   ],
   imports: [
     BrowserModule,

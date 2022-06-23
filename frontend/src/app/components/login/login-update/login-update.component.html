@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Alterar login</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Login" [(ngModel)]="login.login" name="login" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Password" [(ngModel)]="login.password" name="password" type="password" required>
+        </mat-form-field>
+        
+    </form>
+    <button mat-raised-button (click)="updatelogin()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

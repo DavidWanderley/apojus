@@ -1,3 +1,7 @@
+import { LoginDeleteComponent } from './components/login/login-delete/login-delete.component';
+import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
+import { LoginCreateComponent } from './components/login/login-create/login-create.component';
+import { LoginCrudComponent } from './views/login-crud/login-crud.component';
 import { AdvogadosUpdateComponent } from './components/advogados/advogados-update/advogados-update.component';
 import { AdvogadosDeleteComponent } from './components/advogados/advogados-delete/advogados-delete.component';
 import { ProcessoCrudComponent } from './views/processo-crud/processo-crud.component';
@@ -20,6 +24,22 @@ const routes: Routes = [
   {
     path: "",
     component: HomeComponent
+  },
+  {
+    path: "login",
+    component: LoginCrudComponent
+  },
+  {
+    path: "login/create",
+    component: LoginCreateComponent
+  },
+  {
+    path: "login/update/:id",
+    component: LoginUpdateComponent
+  },
+  {
+    path: "login/delete/:id",
+    component: LoginDeleteComponent
   },
   {
     path: "clientes",
