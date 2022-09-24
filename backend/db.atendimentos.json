@@ -13,20 +13,6 @@
       "Link": "N/D",
       "Descricao": "Inicial",
       "NdoProcesso": "N/D"
-    },
-    {
-      "id": 2,
-      "NomeCliente": "Sarah Wanderley",
-      "emailCliente": "sarah@gmail.com",
-      "cpfCliente": "12345678912",
-      "telefoneCliente": "99999999",
-      "Data": "30/09/2022",
-      "Hora": "15:00",
-      "Endereco": "Av. Norte",
-      "TipoDeReuniao": "Local",
-      "Link": "N/D",
-      "Descricao": "Inicial",
-      "NdoProcesso": "N/D"
     }
   ]
 }

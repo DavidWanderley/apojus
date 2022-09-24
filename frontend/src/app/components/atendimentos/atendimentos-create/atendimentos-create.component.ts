@@ -31,7 +31,7 @@ export class AtendimentosCreateComponent implements OnInit {
 
   createAtendimentos(): void{
     this.atendimentosService.create(this.atendimentos).subscribe(() => {
-      this.atendimentosService.showMessage('advogado cadastrado');
+      this.atendimentosService.showMessage('atendimento cadastrado');
       this.router.navigate(['/atendimento']);
     })
 

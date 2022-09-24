@@ -1,1 +1,46 @@
-<p>atendimentos-delete works!</p>
+<mat-card>
+    <mat-card-title>Excluir Atendimento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome do Cliente"  [value]="atendimento.NomeCliente" name="Nome do Cliente" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email do Cliente" [value]="atendimento.emailCliente" name="Email do Cliente" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF do Cliente" [value]="atendimento.cpfCliente" name="CPF do Cliente" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone do Cliente" [value]="atendimento.telefoneCliente" name="Telefone do Cliente" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" [value]="atendimento.Data" name="Data" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hora" [value]="atendimento.Hora" name="Hora" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereco da Reuniao" [value]="atendimento.Endereco" name="Endereco da Reuniao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de Reuniao" [value]="atendimento.TipoDeReuniao" name="Tipo de Reuniao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Link" [value]="atendimento.Link" name="Link" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descricao" [value]="atendimento.Descricao" name="Descricao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero do processo" [value]="atendimento.NdoProcesso" name="Numero do processo" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteAtendimento()" color="warn">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
