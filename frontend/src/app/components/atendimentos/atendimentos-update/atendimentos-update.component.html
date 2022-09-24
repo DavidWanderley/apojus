@@ -1,1 +1,47 @@
-<p>atendimentos-update works!</p>
+<mat-card>
+    <mat-card-title>Alterar Atendimento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome do Cliente" [(ngModel)]="atendimento.NomeCliente" name="Nome do Cliente" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email do Cliente" [(ngModel)]="atendimento.emailCliente" name="Email do Cliente" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF do Cliente" [(ngModel)]="atendimento.cpfCliente" name="CPF do Cliente" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone do Cliente" [(ngModel)]="atendimento.telefoneCliente" name="Telefone do Cliente" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" [(ngModel)]="atendimento.Data" name="Data" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hora" [(ngModel)]="atendimento.Hora" name="Hora" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereco da Reuniao" [(ngModel)]="atendimento.Endereco" name="Endereco da Reuniao" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de Reuniao" [(ngModel)]="atendimento.TipoDeReuniao" name="Tipo de Reuniao" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Link" [(ngModel)]="atendimento.Link" name="Link" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descricao" [(ngModel)]="atendimento.Descricao" name="Descricao" >
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero do processo" [(ngModel)]="atendimento.NdoProcesso" name="Numero do processo" >
+        </mat-form-field>
+        
+    </form>
+    <button mat-raised-button (click)="updateAtendimento()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
