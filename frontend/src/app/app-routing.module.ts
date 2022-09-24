@@ -1,3 +1,7 @@
+import { AtendimentosCrudComponent } from './views/atendimentos-crud/atendimentos-crud.component';
+import { AtendimentosUpdateComponent } from './components/atendimentos/atendimentos-update/atendimentos-update.component';
+import { AtendimentosDeleteComponent } from './components/atendimentos/atendimentos-delete/atendimentos-delete.component';
+import { AtendimentosCreateComponent } from './components/atendimentos/atendimentos-create/atendimentos-create.component';
 import { LoginDeleteComponent } from './components/login/login-delete/login-delete.component';
 import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
 import { LoginCreateComponent } from './components/login/login-create/login-create.component';
@@ -88,6 +92,22 @@ const routes: Routes = [
   {
     path: "advogado/update/:id",
     component: AdvogadosUpdateComponent
+  },
+  {
+    path: "atendimento/create",
+    component: AtendimentosCreateComponent
+  },
+  {
+    path: "atendimento/delete/:id",
+    component: AtendimentosDeleteComponent
+  },
+  {
+    path: "atendimento/update/:id",
+    component: AtendimentosUpdateComponent
+  },
+  {
+    path: "atendimento",
+    component: AtendimentosCrudComponent
   }
 ];
 

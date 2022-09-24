@@ -14,7 +14,7 @@
             <input matInput placeholder="Rg" [(ngModel)]="cliente.rg" name="rg">
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Telefone" [(ngModel)]="cliente.telefone" name="telefone" required>
+            <input matInput placeholder="Telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57" [(ngModel)]="cliente.telefone" name="telefone" required>
         </mat-form-field>
         <mat-form-field>
             <input matInput placeholder="Endereço" [(ngModel)]="cliente.endereco" name="endereco">

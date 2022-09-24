@@ -1,0 +1,46 @@
+<mat-card>
+    <mat-card-title>Novo Atendimento</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Nome do Cliente" [(ngModel)]="atendimentos.NomeCliente" name="Nome do Cliente" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Email do Cliente" [(ngModel)]="atendimentos.emailCliente" name="Email do Cliente" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="CPF do Cliente" [(ngModel)]="atendimentos.cpfCliente" name="CPF do Cliente" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Telefone do Cliente" [(ngModel)]="atendimentos.telefoneCliente" name="Telefone do Cliente" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data" [(ngModel)]="atendimentos.Data" name="Data" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Hora" [(ngModel)]="atendimentos.Hora" name="Hora" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Endereco da Reuniao" [(ngModel)]="atendimentos.Endereco" name="Endereco da Reuniao" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de Reuniao" [(ngModel)]="atendimentos.TipoDeReuniao" name="Tipo de Reuniao" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Link" [(ngModel)]="atendimentos.Link" name="Link" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Descricao" [(ngModel)]="atendimentos.Descricao" name="Descricao" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Numero do processo" [(ngModel)]="atendimentos.NdoProcesso" name="Numero do processo" required>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="createAtendimentos()" color="primary">
+        Salvar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

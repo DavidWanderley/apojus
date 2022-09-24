@@ -46,6 +46,11 @@ import { LoginReadComponent } from './components/login/login-read/login-read.com
 import { LoginDeleteComponent } from './components/login/login-delete/login-delete.component';
 import { LoginUpdateComponent } from './components/login/login-update/login-update.component';
 import { LoginCrudComponent } from './views/login-crud/login-crud.component';
+import { AtendimentosCreateComponent } from './components/atendimentos/atendimentos-create/atendimentos-create.component';
+import { AtendimentosDeleteComponent } from './components/atendimentos/atendimentos-delete/atendimentos-delete.component';
+import { AtendimentosReadComponent } from './components/atendimentos/atendimentos-read/atendimentos-read.component';
+import { AtendimentosUpdateComponent } from './components/atendimentos/atendimentos-update/atendimentos-update.component';
+import { AtendimentosCrudComponent } from './views/atendimentos-crud/atendimentos-crud.component';
 
 
 @NgModule({
@@ -75,7 +80,12 @@ import { LoginCrudComponent } from './views/login-crud/login-crud.component';
     LoginReadComponent,
     LoginDeleteComponent,
     LoginUpdateComponent,
-    LoginCrudComponent
+    LoginCrudComponent,
+    AtendimentosCreateComponent,
+    AtendimentosDeleteComponent,
+    AtendimentosReadComponent,
+    AtendimentosUpdateComponent,
+    AtendimentosCrudComponent
   ],
   imports: [
     BrowserModule,
