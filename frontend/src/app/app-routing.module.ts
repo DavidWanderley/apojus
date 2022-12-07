@@ -22,6 +22,10 @@ import { ClienteDeleteComponent } from './components/cliente/cliente-delete/clie
 import { ClienteUpdateComponent } from './components/cliente/cliente-update/cliente-update.component';
 import { AdvogadosCrudComponent } from './views/advogados-crud/advogados-crud.component';
 import { AdvogadosCreateComponent } from './components/advogados/advogados-create/advogados-create.component';
+import { MovimentacaoCrudComponent } from './views/movimentacao-crud/movimentacao-crud.component';
+import { MovimentacaoCreateComponent } from './components/movimentacao/movimentacao-create/movimentacao-create.component';
+import { MovimentacaoDeleteComponent } from './components/movimentacao/movimentacao-delete/movimentacao-delete.component';
+import { MovimentacaoUpdateComponent } from './components/movimentacao/movimentacao-update/movimentacao-update.component';
 
 
 const routes: Routes = [
@@ -108,6 +112,22 @@ const routes: Routes = [
   {
     path: "atendimento",
     component: AtendimentosCrudComponent
+  },
+  {
+    path: "movimentacao",
+    component: MovimentacaoCrudComponent
+  },
+  {
+    path: "movimentacao/create",
+    component: MovimentacaoCreateComponent
+  },
+  {
+    path: "movimentacao/delete/:id",
+    component: MovimentacaoDeleteComponent
+  },
+  {
+    path: "movimentacao/update/:id",
+    component: MovimentacaoUpdateComponent
   }
 ];
 

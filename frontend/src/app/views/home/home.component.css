@@ -21,3 +21,40 @@ img {
     width: 320px;
     height: 205px;
 }
+
+.conteiner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    color: white;
+    margin: 1%;
+}
+
+.conteiner .title{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.dashboard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 15px 0px 0px;
+}
+
+.child{
+   flex-wrap: wrap;
+   flex: 1;
+   border-radius: 8px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   padding: 20px;
+   background-color: rgb(184, 184, 184);
+   border: 1px solid rgba(0,0,0,0.2);
+   box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
