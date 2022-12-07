@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>Alterar movimentacao</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Prazo" [(ngModel)]="movimentacao.Prazo" name="Prazo" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Diligencia" [(ngModel)]="movimentacao.diligencia" name="Diligencia" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data da movimentacao" [(ngModel)]="movimentacao.dataM" name="Data da movimentacao" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de movimentacao" [(ngModel)]="movimentacao.TipoM" name="Tipo de movimentacao">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Fase do Processo" [(ngModel)]="movimentacao.faseP" name="Fase do Processo" required>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [(ngModel)]="movimentacao.valor" name="valor">
+        </mat-form-field>
+        <!-- onkeypress="return event.charCode >= 48 && event.charCode <= 57" -->
+    </form>
+    <button mat-raised-button (click)="updateMovimentacao()" color="primary">
+        Atualizar
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>

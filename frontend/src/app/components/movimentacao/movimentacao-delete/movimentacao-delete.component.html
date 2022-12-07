@@ -1,0 +1,32 @@
+<mat-card>
+    <mat-card-title>Excluir Movimentacao</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Prazo" [value]="movimentacao.Prazo" name="Prazo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Diligencia" [value]="movimentacao.diligencia" name="Diligencia" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Data da movimentacao" [value]="movimentacao.dataM" name="Data da movimentacao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Tipo de movimentacao" [value]="movimentacao.TipoM" name="Tipo de movimentacao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Fase do Processo" [value]="movimentacao.faseP" name="Fase do Processo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Valor" [value]="movimentacao.valor" name="valor" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="deleteMovimentacao()" color="warn">
+        Excluir
+    </button>
+
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+
+</mat-card>
+
