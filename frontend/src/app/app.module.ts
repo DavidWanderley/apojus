@@ -51,7 +51,15 @@ import { AtendimentosDeleteComponent } from './components/atendimentos/atendimen
 import { AtendimentosReadComponent } from './components/atendimentos/atendimentos-read/atendimentos-read.component';
 import { AtendimentosUpdateComponent } from './components/atendimentos/atendimentos-update/atendimentos-update.component';
 import { AtendimentosCrudComponent } from './views/atendimentos-crud/atendimentos-crud.component';
-
+import { DashboardReadClienteComponent } from './components/dashboard/dashboard-read-cliente/dashboard-read-cliente.component';
+import { DashboardReadAdvogadosComponent } from './components/dashboard/dashboard-read-advogados/dashboard-read-advogados.component';
+import { DashboardReadAtendimentosComponent } from './components/dashboard/dashboard-read-atendimentos/dashboard-read-atendimentos.component';
+import { DashboardReadProcessoComponent } from './components/dashboard/dashboard-read-processo/dashboard-read-processo.component';
+import { MovimentacaoCreateComponent } from './components/movimentacao/movimentacao-create/movimentacao-create.component';
+import { MovimentacaoReadComponent } from './components/movimentacao/movimentacao-read/movimentacao-read.component';
+import { MovimentacaoDeleteComponent } from './components/movimentacao/movimentacao-delete/movimentacao-delete.component';
+import { MovimentacaoUpdateComponent } from './components/movimentacao/movimentacao-update/movimentacao-update.component';
+import { MovimentacaoCrudComponent } from './views/movimentacao-crud/movimentacao-crud.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +93,17 @@ import { AtendimentosCrudComponent } from './views/atendimentos-crud/atendimento
     AtendimentosDeleteComponent,
     AtendimentosReadComponent,
     AtendimentosUpdateComponent,
-    AtendimentosCrudComponent
+    AtendimentosCrudComponent,
+    DashboardReadClienteComponent,
+    DashboardReadAdvogadosComponent,
+    DashboardReadAtendimentosComponent,
+    DashboardReadProcessoComponent,
+    MovimentacaoCreateComponent,
+    MovimentacaoReadComponent,
+    MovimentacaoDeleteComponent,
+    MovimentacaoUpdateComponent,
+    MovimentacaoCrudComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div class="mat-elevation-z4">
+  <table mat-table [dataSource]="clientes">
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef>Quantidade de Clientes</th>
+      <td class="ID" mat-cell *matCellDef="let row">
+        <i class="material-icons">
+          person
+        </i>
+        {{row.id}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
+

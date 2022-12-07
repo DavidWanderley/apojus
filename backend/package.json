@@ -9,7 +9,8 @@
     "iniciar": "json-server --watch db.processos.json --port 3002",
     "iniciar2": "json-server --watch db.advogados.json --port 3003",
     "iniciar3": "json-server --watch db.login.json --port 3004",
-    "iniciar4": "json-server --watch db.atendimentos.json --port 3005"
+    "iniciar4": "json-server --watch db.atendimentos.json --port 3005",
+    "iniciar5": "json-server --watch db.movimentacao.json --port 3006"
   },
   "keywords": [],
   "author": "",

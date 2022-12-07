@@ -1,0 +1,15 @@
+table {
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+}
+
+.ID{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.material-icons{
+    font-size: 3rem;
+    color: rgb(78, 40, 40);
+}
